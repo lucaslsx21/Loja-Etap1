@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definindo a codificação de caracteres do documento como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Tornando o layout responsivo em diferentes dispositivos (mobile first) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>AVANTI - E-commerce</title>
+    <!-- Link para a folha de estilo (CSS) externa -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para a biblioteca de ícones (Boxicons) -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Banner: Mensagem promocional visível no topo da página -->
+    <div class="top-banner">
+        Ganhe R$10,00 de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10
+    </div>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="container header-content">
+            <!-- Logo da empresa -->
+            <h1 class="logo">AVANTI</h1>
+
+            <!-- Barra de pesquisa -->
+            <div class="search-bar">
+                <!-- Campo de entrada para busca de produtos -->
+                <input type="text" placeholder="Digite aqui o que você procura">
+                <!-- Botão de pesquisa com ícone -->
+                <button class="search-button">
+                    <i class='bx bx-search'></i>
+                </button>
+            </div>
+
+            <!-- Área de ações do usuário (Perfil e Carrinho) -->
+            <div class="user-actions">
+                <!-- Ícone de perfil do usuário -->
+                <div class="user-profile">
+                    <i class='bx bx-user'></i>
+                    <div class="user-info">
+                        <span>Olá,</span>
+                        <span>Nome cliente!</span> <!-- Exibição do nome do cliente (a ser dinâmico) -->
+                    </div>
+                </div>
+                <!-- Ícone de carrinho de compras -->
+                <div class="cart">
+                    <i class='bx bx-cart'></i>
+                    <!-- Contador do carrinho de compras -->
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegação principal -->
+        <nav class="container">
+            <div class="nav-content">
+                <!-- Dropdown de categorias -->
+                <div class="categories-dropdown">
+                    <button class="dropdown-btn">
+                        <i class='bx bx-menu'></i>
+                        Todas as Categorias
+                    </button>
+                </div>
+                <!-- Lista de links para as categorias de produtos -->
+                <ul class="nav-links">
+                    <li><a href="#">Roupas</a></li>
+                    <li><a href="#">Calçados</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Esportes</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção hero: imagem e chamada para ação destacada -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <!-- Título e subtítulo da seção -->
+                <h2>SUPER<span>SALE</span></h2>
+                <p class="subtitle">ITENS SELECIONADOS COM ATÉ</p>
+                <p class="discount">50%OFF</p>
+            </div>
+            <div class="hero-image">
+                <!-- Imagem ilustrativa da seção -->
+                <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-4.0.3" alt="Folded clothes">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Lançamentos -->
+    <section class="new-releases">
+        <div class="container">
+            <!-- Cabeçalho da seção de lançamentos -->
+            <div class="section-header">
+                <h3>Lançamentos</h3>
+                <!-- Botão para ver mais produtos -->
+                <button class="view-more">Ver mais</button>
+            </div>
+
+            <!-- Grelha de produtos -->
+            <div class="products-grid">
+                <!-- Cartão de produto individual -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- Tag de "Novo" indicando lançamento recente -->
+                        <span class="new-tag">Novo</span>
+                        <!-- Imagem do produto -->
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Camiseta Básica Branca">
+                    </div>
+                    <div class="product-info">
+                        <!-- Título e preço do produto -->
+                        <p class="product-title">Camiseta Básica Branca</p>
+                        <p class="product-price">R$ 79,90</p>
+                    </div>
+                </div>
+
+                <!-- Outros produtos seguem o mesmo padrão -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="new-tag">Novo</span>
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Jaqueta Jeans Moderna">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Jaqueta Jeans Moderna</p>
+                        <p class="product-price">R$ 199,90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="new-tag">Novo</span>
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Calça Social Slim">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Calça Social Slim</p>
+                        <p class="product-price">R$ 159,90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="new-tag">Novo</span>
+                        <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vestido Casual Elegante">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Vestido Casual Elegante</p>
+                        <p class="product-price">R$ 229,90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="new-tag">Novo</span>
+                        <img src="https://images.unsplash.com/photo-1617952986600-802f965dcdbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blazer Moderno">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Blazer Moderno</p>
+                        <p class="product-price">R$ 299,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Script JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

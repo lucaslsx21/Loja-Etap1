@@ -1,0 +1,347 @@
+/* Resetando as margens, paddings e definindo o box-sizing global */
+* {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    box-sizing: border-box; /* Aplica box-sizing para incluir padding e border dentro das dimensões do elemento */
+    font-family: Inter, system-ui, -apple-system, sans-serif; /* Define a fonte do site */
+}
+
+/* Container geral */
+.container {
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Adiciona padding nas laterais */
+}
+
+/* Banner superior */
+.top-banner {
+    background-color: #FF6B6B; /* Cor de fundo do banner */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 0.5rem; /* Padding para dar espaço */
+    font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+/* Cabeçalho */
+header {
+    padding: 1rem 0; /* Padding no topo e na parte inferior */
+    border-bottom: 1px solid #e5e7eb; /* Borda inferior */
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+/* Conteúdo do cabeçalho */
+.header-content {
+    display: flex; /* Flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    gap: 2rem; /* Espaçamento entre os itens */
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #4A4E69; /* Cor da logo */
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    flex: 1; /* Barra de pesquisa ocupa o espaço restante */
+    max-width: 32rem; /* Largura máxima da barra */
+    position: relative; /* Para posicionar o botão de busca */
+}
+
+.search-bar input {
+    width: 100%; /* Preenche toda a largura disponível */
+    padding: 0.5rem 2.5rem 0.5rem 1rem; /* Padding interno */
+    border: 2px solid #9A8C98; /* Borda do input */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    font-size: 0.875rem; /* Tamanho da fonte */
+    transition: border-color 0.2s; /* Transição para a cor da borda */
+}
+
+.search-bar input:focus {
+    outline: none; /* Remove o contorno */
+    border-color: #4A4E69; /* Cor da borda ao focar */
+}
+
+/* Botão de busca */
+.search-button {
+    position: absolute; /* Posiciona o botão dentro da barra */
+    right: 0.75rem; /* Alinha à direita */
+    top: 50%; /* Alinha ao centro vertical */
+    transform: translateY(-50%); /* Ajusta para alinhar corretamente */
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: #9A8C98; /* Cor do ícone */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Ações do usuário (perfil e carrinho) */
+.user-actions {
+    display: flex; /* Flexbox para alinhar itens */
+    align-items: center; /* Alinha verticalmente */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+/* Perfil do usuário */
+.user-profile {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha os itens */
+    gap: 0.5rem; /* Espaçamento entre os itens */
+    color: #4A4E69; /* Cor do texto */
+}
+
+/* Informações do usuário */
+.user-info {
+    font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+/* Ícone do carrinho */
+.cart {
+    position: relative; /* Para posicionar o contador de itens */
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: #4A4E69; /* Cor do ícone */
+}
+
+/* Contador de itens no carrinho */
+.cart-count {
+    position: absolute; /* Posiciona o contador no canto superior direito */
+    top: -0.5rem; /* Ajusta a posição para cima */
+    right: -0.5rem; /* Ajusta a posição para a direita */
+    background-color: #FF6B6B; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    width: 1.25rem; /* Tamanho do contador */
+    height: 1.25rem; /* Tamanho do contador */
+    border-radius: 50%; /* Faz o contador ser redondo */
+    display: flex; /* Flexbox para centralizar o texto */
+    align-items: center; /* Alinha o texto verticalmente */
+    justify-content: center; /* Alinha o texto horizontalmente */
+    font-size: 0.75rem; /* Tamanho do texto */
+}
+
+/* Navegação */
+nav {
+    margin-top: 1rem; /* Espaço superior */
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+/* Conteúdo da navegação */
+.nav-content {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha os itens */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+/* Botão do dropdown (menu de categorias) */
+.dropdown-btn {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha os itens */
+    gap: 0.5rem; /* Espaçamento entre os itens */
+    padding: 0.5rem 1rem; /* Padding do botão */
+    background-color: #F2E9E4; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #4A4E69; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    transition: background-color 0.2s; /* Transição para a cor de fundo */
+}
+
+.dropdown-btn:hover {
+    background-color: #9A8C98; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Links de navegação */
+.nav-links {
+    display: flex; /* Flexbox */
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+.nav-links a {
+    color: #4A4E69; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.2s; /* Transição para a cor do texto */
+    font-weight: 500; /* Peso da fonte */
+}
+
+.nav-links a:hover {
+    color: #FF6B6B; /* Cor do link ao passar o mouse */
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #F2E9E4; /* Cor de fundo */
+    padding: 4rem 0; /* Espaço superior e inferior */
+}
+
+.hero-content {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha os itens */
+    justify-content: space-between; /* Espaça os itens */
+}
+
+.hero-text h2 {
+    font-size: 3.75rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 1rem; /* Espaço inferior */
+    color: #4A4E69; /* Cor do texto */
+}
+
+.hero-text h2 span {
+    font-weight: 300; /* Peso da fonte */
+    color: #9A8C98; /* Cor do texto */
+}
+
+.subtitle {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #FF6B6B; /* Cor do texto */
+    margin-bottom: 2rem; /* Espaço inferior */
+}
+
+.discount {
+    font-size: 3rem; /* Tamanho da fonte */
+    color: #FF6B6B; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+}
+
+.hero-image img {
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); /* Sombra da imagem */
+    max-width: 100%; /* A imagem ocupa 100% da largura */
+    height: auto; /* A altura é proporcional */
+}
+
+/* Seção de Novos Lançamentos */
+.new-releases {
+    padding: 4rem 0; /* Espaço superior e inferior */
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+/* Cabeçalho da seção */
+.section-header {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha os itens */
+    justify-content: space-between; /* Espaça os itens */
+    margin-bottom: 2rem; /* Espaço inferior */
+}
+
+.section-header h3 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: #4A4E69; /* Cor do texto */
+}
+
+/* Botão de "ver mais" */
+.view-more {
+    color: #FF6B6B; /* Cor do texto */
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-weight: 500; /* Peso da fonte */
+    transition: color 0.2s; /* Transição para a cor do texto */
+}
+
+.view-more:hover {
+    color: #9A8C98; /* Cor ao passar o mouse */
+}
+
+/* Grid de produtos */
+.products-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+/* Cartão de produto */
+.product-card {
+    position: relative; /* Para posicionar a imagem e o título */
+    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+.product-image {
+    position: relative; /* Para posicionar a tag "novo" */
+    margin-bottom: 1rem; /* Espaço inferior */
+}
+
+.new-tag {
+    position: absolute; /* Posiciona a tag no canto superior esquerdo */
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: #FF6B6B; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 0.25rem 0.5rem; /* Padding interno */
+    border-radius: 0.25rem; /* Bordas arredondadas */
+    font-size: 0.75rem; /* Tamanho da fonte */
+}
+
+.product-image img {
+    width: 100%; /* A imagem ocupa 100% da largura */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra da imagem */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05); /* A imagem aumenta ao passar o mouse */
+}
+
+.product-info {
+    margin-top: 1rem; /* Espaço superior */
+}
+
+.product-title {
+    color: #9A8C98; /* Cor do título */
+    font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+.product-price {
+    font-weight: 600; /* Negrito */
+    margin-top: 0.5rem; /* Espaço superior */
+    color: #4A4E69; /* Cor do texto */
+}
+
+/* Menu de categorias dropdown */
+.categories-menu {
+    position: absolute; /* Posiciona o menu abaixo do botão */
+    top: 100%; /* Alinha ao topo do botão */
+    left: 0; /* Alinha à esquerda */
+    background-color: white; /* Cor de fundo */
+    border: 1px solid #9A8C98; /* Borda do menu */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 0.5rem 0; /* Padding interno */
+    margin-top: 0.5rem; /* Espaço superior */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Z-index para ficar acima de outros elementos */
+    min-width: 200px; /* Largura mínima */
+}
+
+.category-item {
+    padding: 0.5rem 1rem; /* Padding interno */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #4A4E69; /* Cor do texto */
+    transition: background-color 0.2s; /* Transição para o fundo */
+}
+
+.category-item:hover {
+    background-color: #F2E9E4; /* Cor de fundo ao passar o mouse */
+    color: #FF6B6B; /* Cor do texto ao passar o mouse */
+}
+
+/* Animação de contagem de itens do carrinho */
+@keyframes cartBounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.cart-count {
+    animation: cartBounce 0.5s ease infinite; /* Aplica a animação de contagem */
+}
